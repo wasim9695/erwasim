@@ -1014,8 +1014,6 @@ a {
     }
 }
 
-
-
 .text-color-1 {
     color: #fff;
 }
@@ -2168,11 +2166,6 @@ header {
 //     animation-name: bounceIn;
 // }
 
-
-  
-$f-title:'Roboto', sans-serif;
-$f-body:'Open Sans', sans-serif;
-
 @mixin centre($axis: "both") {
 	position: absolute;
 	@if $axis == "y" {
@@ -2247,8 +2240,8 @@ $f-body:'Open Sans', sans-serif;
 }
 
 @include keyframes(textColour) {
-  0%   {color:#fff;}
-  100% {color:#3BB2D0;}
+  0%   {color:#6001D3;}
+  100% {color: #000;}
 }
 
 
@@ -2256,7 +2249,7 @@ $f-body:'Open Sans', sans-serif;
 	@include centre();
 	width:240px;
 	height:240px;
-	border:5px solid #1B5F70;
+	border:5px solid #6001D3;
 	border-radius:120px;
 	box-sizing:border-box;
 	
@@ -2265,7 +2258,7 @@ $f-body:'Open Sans', sans-serif;
 		@include centre;
 		content:" ";
 		display:block;
-		background:#222;
+		background: #fff;
 		transform-origin:center;
 		z-index:0;
 	}
@@ -2282,7 +2275,7 @@ $f-body:'Open Sans', sans-serif;
 		height:200px;
 		color:#888;
 		text-align:center;
-		border:5px solid lighten(#1B5F70, 15%);
+		border:5px solid lighten(#6001D3, 15%);
 		border-radius:100px;
 		box-sizing:border-box;
 		z-index:20;
@@ -2292,7 +2285,7 @@ $f-body:'Open Sans', sans-serif;
 			@include centre;
 			content:" ";
 			display:block;
-			background:#222;
+			background: #fff;
 			transform-origin:center;
 			z-index:-1;
 		}
@@ -2311,16 +2304,16 @@ $f-body:'Open Sans', sans-serif;
 			width:140px;
 			height:140px;
 			text-align:center;
-			border:5px solid lighten(#1B5F70, 25%);
+			border:5px solid lighten(#6001D3, 25%);
 			border-radius:70px;
 			box-sizing:border-box;
 			z-index:20;
-
+            font-family: $font-1;
 			&:before, &:after{
 				@include centre;
 				content:" ";
 				display:block;
-				background:#222;
+				background:#fff;
 				transform-origin:center;
 				z-index:-1;
 			}
@@ -2337,19 +2330,6 @@ $f-body:'Open Sans', sans-serif;
 			}
 		}
 	}
-}
-
-#particleCanvas-White{
-	@include centre();
-	width:100%;
-	height:50%;
-	opacity:0.1;
-}
-
-#particleCanvas-Blue{
-	@include centre();
-	width:300px;
-	height:300px;
 }
 
 @keyframes spin {
@@ -2551,25 +2531,17 @@ $f-body:'Open Sans', sans-serif;
 
 // heading 
 .heading-section {
-    margin-bottom: 121px;
+    margin-bottom: 50px;
     h5 {
-        margin-bottom: 12px;
+        margin-bottom: 17px;
+        margin-left: 1px;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--primary-color4);
+        color: var(--primary-color3);
     }
-    .title-section {
-        position: relative;
-        &::before {
-            position: absolute;
-            bottom: -61px;
-            left: 50%;
-            background-color: var(--primary-color3); 
-            width: 2px;
-            height: 50px;
-            transform: translateX(-50%);
-            content: "";
-            text-transform: capitalize;
-        }
+    h2 {
+        line-height: 44px;
+        text-transform: capitalize;
     }
     &.style {
         margin-top: -3px;
@@ -2578,20 +2550,20 @@ $f-body:'Open Sans', sans-serif;
     } 
 }
 
-.heading-section2 {
-    margin-bottom: 51px;
-    h5 {
-        margin-bottom: 12px;
-        text-transform: uppercase;
-        color: var(--primary-color4);
-    }
-    .title-section {
-        text-transform: capitalize;
-    }
-    &.style {
-        margin-bottom: 42px;
-    }
-}
+// .heading-section2 {
+//     margin-bottom: 51px;
+//     h5 {
+//         margin-bottom: 12px;
+//         text-transform: uppercase;
+//         color: var(--primary-color4);
+//     }
+//     .title-section {
+//         text-transform: capitalize;
+//     }
+//     &.style {
+//         margin-bottom: 42px;
+//     }
+// }
 
 // hover img
 .flat-im {
