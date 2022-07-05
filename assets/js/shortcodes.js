@@ -346,6 +346,20 @@
         });
     };
 
+    var tabs = function(){
+        $('.flat-tabs').each(function(){
+            $(this).find('.content-tab').children().hide();
+            $(this).find('.content-tab').children().first().show();
+            $(this).find('.menu-tab').children('li').on('click',function(){
+                var liActive = $(this).index();
+                var contentActive=$(this).siblings().removeClass('active').parents('.flat-tabs').find('.content-tab').children().eq(liActive);
+                contentActive.addClass('active').fadeIn("slow");
+                contentActive.siblings().removeClass('active');
+                $(this).addClass('active').parents('.flat-tabs').find('.content-tab').children().eq(liActive).siblings().hide();
+                swiper_tab();
+            });
+        });
+    };
 
     // Dom Ready
     $(function () {
@@ -366,6 +380,7 @@
         flcustominput();
         popupGallery();
         donatProgress();
+        tabs();
         Preloader();
     });
 
