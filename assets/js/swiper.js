@@ -145,7 +145,7 @@ var swiper =  new Swiper(".carousel-3", {
         disableOnInteraction: false,
     },
     slidesPerView: 3,   
-    loop: false,
+    loop: true,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -153,10 +153,14 @@ var swiper =  new Swiper(".carousel-3", {
       },
     breakpoints: {
         768: {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 5,
+            spaceBetween: 75,
         },
-        1024: {
+        991: {
+            slidesPerView: 5,
+            spaceBetween: 100,
+        },
+        1200: {
             slidesPerView: 6,
             spaceBetween: 130,
         },
