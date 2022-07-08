@@ -1,8 +1,8 @@
 var swiper =  new Swiper(".mainslider", {
-    autoplay: {
-    delay: 8000,
-    disableOnInteraction: false,
-    },
+    // autoplay: {
+    // delay: 8000,
+    // disableOnInteraction: false,
+    // },
     slidesPerView: 1,
     speed: 500,
     effect: "fade",

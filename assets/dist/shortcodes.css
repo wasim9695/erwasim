@@ -151,7 +151,6 @@
 .btn-action.btn-3 {
   border: 0px solid transparent;
   background-color: rgba(96, 1, 211, 0.1019607843);
-  background: rgba(96, 1, 211, 0.1);
 }
 .btn-action.btn-3 span {
   color: var(--primary-color3);
@@ -160,6 +159,20 @@
   color: var(--primary-color);
 }
 .btn-action.btn-3::before, .btn-action.btn-3::after {
+  background-color: var(--primary-color3);
+}
+
+.btn-action.btn-4 {
+  border: 0px solid transparent;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+}
+.btn-action.btn-4 span {
+  color: var(--primary-color);
+}
+.btn-action.btn-4:hover span {
+  color: var(--primary-color);
+}
+.btn-action.btn-4::before, .btn-action.btn-4::after {
   background-color: var(--primary-color3);
 }
 
@@ -320,6 +333,24 @@
 .slider {
   position: relative;
   overflow: hidden;
+}
+.slider.home3 .slider-item {
+  padding: 183px 0 0px;
+}
+.slider.home3 .slider-item .content {
+  margin-top: -15px;
+}
+.slider.home3 .slider-item .content .heading {
+  margin-bottom: 66px;
+}
+.slider.home3 .slider-item .content h5 {
+  margin-bottom: 17px;
+}
+.slider.home3 .slider-item .content h1 {
+  font-size: 56px;
+  line-height: 68px;
+  padding-right: 185px;
+  margin-bottom: 32px;
 }
 .slider .img-slider img {
   position: absolute;
@@ -488,7 +519,6 @@
   transform: translateX(400px);
 }
 
-.flat-slider .signature-slider,
 .flat-slider .flat-bt-slider,
 .flat-slider .sub-heading,
 .flat-slider .heading {
@@ -496,7 +526,6 @@
 }
 
 .flat-slider .image,
-.flat-slider .signature-slider,
 .flat-slider .flat-bt-slider,
 .flat-slider .sub-heading,
 .flat-slider .heading {
@@ -504,7 +533,6 @@
 }
 
 .swiper-slide-active .flat-slider .image,
-.swiper-slide-active .flat-slider .signature-slider,
 .swiper-slide-active .flat-slider .flat-bt-slider,
 .swiper-slide-active .flat-slider .sub-heading,
 .swiper-slide-active .flat-slider .heading {
@@ -522,7 +550,6 @@
   transform: translateX(0) !important;
 }
 
-.swiper-slide-active .flat-slider .signature-slider,
 .swiper-slide-active .flat-slider .flat-bt-slider,
 .swiper-slide-active .flat-slider .sub-heading,
 .swiper-slide-active .flat-slider .heading {
@@ -530,7 +557,7 @@
 }
 
 .swiper-slide-active .flat-slider .heading {
-  transition-delay: 800ms !important;
+  transition-delay: 500ms !important;
 }
 
 .swiper-slide-active .flat-slider .sub-heading {
@@ -538,12 +565,11 @@
 }
 
 .swiper-slide-active .flat-slider .flat-bt-slider {
-  transition-delay: 1100ms;
+  transition-delay: 700ms;
 }
 
-.swiper-slide-active .flat-slider .image,
-.swiper-slide-active .flat-slider .signature-slider {
-  transition-delay: 900ms;
+.swiper-slide-active .flat-slider .image {
+  transition-delay: 500ms;
 }
 
 /* blog
@@ -691,10 +717,28 @@
   background: #F6F7FA;
   padding-bottom: 100px;
 }
+.flat-service.home2 {
+  background: #180D45;
+}
+.flat-service.home3 {
+  clip-path: polygon(0 0, 22% 9%, 39% 11.5%, 63% 11%, 82% 9%, 142% 0, 100% 95%, 78% 92%, 60% 90%, 36% 90%, 20% 93%, 0 100%);
+  padding: 231px 0 208px;
+}
+.flat-service.home3 .heading-section h2 {
+  padding: 0 400px;
+}
+.flat-service.home3 .service-box .icon-service {
+  line-height: 120px;
+}
 .flat-service .service-box {
   padding: 50px 20px;
   background-color: var(--primary-color);
   border-radius: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flat-service .service-box .icon-service {
   width: 96px;
@@ -776,6 +820,9 @@
 }
 .flat-service .service-box .button:hover i {
   animation: 0.3s link-icon linear;
+}
+.flat-service .service-box:hover {
+  box-shadow: -15px 40px 50px rgba(171, 175, 199, 0.301961);
 }
 .flat-service .service-box:hover .icon-service svg {
   transform: rotateY(180deg);
@@ -859,6 +906,47 @@
 }
 .flat-about {
   padding: 100px 0;
+}
+.flat-about.home3 {
+  padding-top: 16px;
+  padding-bottom: 76px;
+}
+.flat-about.home3 .wrap-about .heading {
+  width: 33.2%;
+  padding-top: 80px;
+  padding-right: 50px;
+  padding-left: 18px;
+}
+.flat-about.home3 .wrap-icon {
+  width: 26.8%;
+  padding-top: 11px;
+  padding-left: 5px;
+}
+.flat-about.home3 .wrap-icon .inner {
+  margin-bottom: 13px;
+}
+.flat-about.home3 .wrap-icon .box {
+  margin-bottom: 39px;
+}
+.flat-about.home3 .wrap-icon .box .icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color3);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+}
+.flat-about.home3 .wrap-icon .box .icon.style-2 {
+  background-color: #FD346E;
+}
+.flat-about.home3 .wrap-icon .box .icon.style-3 {
+  background-color: #1DE2CF;
+}
+.flat-about.home3 .wrap-icon .box h3 {
+  margin-left: 16px;
+}
+.flat-about.home3 .wrap-icon .box:last-child {
+  margin-bottom: 0;
 }
 .flat-about .wrap-about {
   display: flex;
@@ -986,6 +1074,18 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.flat-portflio.home2 {
+  background: #180D45;
+}
+.flat-portflio.home2 .flat-tabs .tab-title li::after {
+  background-color: #FABE3C;
+}
+.flat-portflio.home2 .flat-tabs .tab-title li h4 {
+  color: var(--primary-color);
+}
+.flat-portflio.home3 .flat-tabs .tab-title li::after {
+  background-color: var(--primary-color3);
+}
 
 .flat-tabs.themesflat-tabs {
   margin-bottom: 4px;
@@ -1047,6 +1147,9 @@
 .flat-process {
   padding-top: 85px;
   position: relative;
+}
+.flat-process.home2 {
+  padding-top: 105px;
 }
 .flat-process .heading-section {
   margin-bottom: 38px;
@@ -1126,6 +1229,9 @@
   background: #F6F7FA;
   padding-bottom: 69px;
 }
+.flat-development.home2 {
+  background-color: #180D45;
+}
 .flat-development .heading-section {
   margin-bottom: 61px;
 }
@@ -1134,12 +1240,31 @@
   padding: 59px;
   margin-bottom: 32px;
   border-radius: 32px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flat-development .wrap-development .icon {
   margin-bottom: 24px;
 }
+.flat-development .wrap-development .icon svg {
+  transition: all 0.5s ease;
+}
 .flat-development .wrap-development h3 {
   margin-bottom: 15px;
+}
+.flat-development .wrap-development:hover {
+  box-shadow: -15px 40px 50px rgba(171, 175, 199, 0.301961);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-development .wrap-development:hover .icon svg {
+  transform: rotateY(180deg);
 }
 
 .flat-faq {
@@ -1200,6 +1325,9 @@
 .flat-skill {
   background: #F6F7FA;
   padding-bottom: 54px;
+}
+.flat-skill.home2 {
+  background-color: #180D45;
 }
 .flat-skill .heading-section h5 {
   margin-bottom: 13px;
