@@ -1845,6 +1845,42 @@ header {
     }
 }
 
+.is_dark {
+    #footer {
+        padding: 80px 0 40px;
+        background: #180D45;
+        border: 1px solid #FFFFFF1A;
+        .widget-menu {
+            .title-widget {
+                color: var(--primary-color) !important;
+            }
+            &.style-2 a {
+                color: rgba(171, 175, 199, 0.75);
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+            &.style-3 p {
+                color: rgba(171, 175, 199, 0.75);
+            }
+        }
+       
+        p {
+            color: rgba(156, 153, 174, 0.75) !important;
+        }
+
+        &.home {
+            .form-subcribe {
+                input {
+                    background: #2F2558;
+                    border: 1px solid  #2F2558;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
 /* Widget
 -------------------------------------------------------------- */
 
@@ -2136,7 +2172,7 @@ header {
             }
         }
     }
-    &.home {
+    &.home-style {
         background: #F6F7FA;
         border-top: 1px solid var(--primary-color5);
         .title-bottom {

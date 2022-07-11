@@ -1782,6 +1782,32 @@ header {
   background: #F6F7FA;
 }
 
+.is_dark #footer {
+  padding: 80px 0 40px;
+  background: #180D45;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+.is_dark #footer .widget-menu .title-widget {
+  color: var(--primary-color) !important;
+}
+.is_dark #footer .widget-menu.style-2 a {
+  color: rgba(171, 175, 199, 0.75);
+}
+.is_dark #footer .widget-menu.style-2 a:hover {
+  color: var(--primary-color);
+}
+.is_dark #footer .widget-menu.style-3 p {
+  color: rgba(171, 175, 199, 0.75);
+}
+.is_dark #footer p {
+  color: rgba(156, 153, 174, 0.75) !important;
+}
+.is_dark #footer.home .form-subcribe input {
+  background: #2F2558;
+  border: 1px solid #2F2558;
+  color: var(--primary-color);
+}
+
 /* Widget
 -------------------------------------------------------------- */
 /*widget-logo*/
@@ -2054,30 +2080,30 @@ header {
 .widget-social-footer .icon-bottom a:hover i {
   background-color: var(--primary-color3);
 }
-.widget-social-footer.home {
+.widget-social-footer.home-style {
   background: #F6F7FA;
   border-top: 1px solid var(--primary-color5);
 }
-.widget-social-footer.home .title-bottom {
+.widget-social-footer.home-style .title-bottom {
   color: var(--primary-color2);
 }
-.widget-social-footer.home .title-bottom a {
+.widget-social-footer.home-style .title-bottom a {
   color: var(--primary-color2);
 }
-.widget-social-footer.home .title-bottom a:hover {
+.widget-social-footer.home-style .title-bottom a:hover {
   color: var(--primary-color3);
 }
-.widget-social-footer.home ul li a {
+.widget-social-footer.home-style ul li a {
   color: var(--primary-color6);
 }
-.widget-social-footer.home ul li a:hover {
+.widget-social-footer.home-style ul li a:hover {
   color: var(--primary-color3);
 }
-.widget-social-footer.home .icon-bottom a i {
+.widget-social-footer.home-style .icon-bottom a i {
   color: var(--primary-color6);
   background-color: #EAEBEF;
 }
-.widget-social-footer.home .icon-bottom a:hover i {
+.widget-social-footer.home-style .icon-bottom a:hover i {
   background-color: var(--primary-color3);
   color: var(--primary-color);
 }
@@ -3792,16 +3818,33 @@ header {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.flat-portflio.home2 {
+.flat-portflio.home3 .flat-tabs .tab-title li::after {
+  background-color: var(--primary-color3);
+}
+
+.is_dark .flat-portflio {
   background: #180D45;
 }
-.flat-portflio.home2 .flat-tabs .tab-title li::after {
-  background-color: #FABE3C;
-}
-.flat-portflio.home2 .flat-tabs .tab-title li h4 {
+.is_dark .flat-portflio .flat-tabs h2 {
   color: var(--primary-color);
 }
-.flat-portflio.home3 .flat-tabs .tab-title li::after {
+.is_dark .flat-portflio .flat-tabs .tab-title li::after {
+  background-color: #FABE3C;
+}
+.is_dark .flat-portflio .flat-tabs .tab-title li h4 {
+  color: var(--primary-color);
+}
+.is_dark .flat-portflio .flat-tabs .btn-action {
+  border: 0px solid transparent;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+}
+.is_dark .flat-portflio .flat-tabs .btn-action span {
+  color: var(--primary-color);
+}
+.is_dark .flat-portflio .flat-tabs .btn-action:hover span {
+  color: var(--primary-color);
+}
+.is_dark .flat-portflio .flat-tabs .btn-action::before, .is_dark .flat-portflio .flat-tabs .btn-action::after {
   background-color: var(--primary-color3);
 }
 
@@ -3983,6 +4026,16 @@ header {
 }
 .flat-development .wrap-development:hover .icon svg {
   transform: rotateY(180deg);
+}
+
+.is_dark .flat-development {
+  background-color: #180D45;
+}
+.is_dark .flat-development .heading-section h2 {
+  color: var(--primary-color);
+}
+.is_dark .flat-development .heading-section h5 {
+  color: #FABE3C;
 }
 
 .flat-faq {
@@ -4272,6 +4325,34 @@ header {
 }
 .flat-case-details .side-bar .flat-icon-practice {
   margin-bottom: 0;
+}
+
+.mode_switcher {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.mode_switcher a {
+  background: #343444;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  font-size: 16px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mode_switcher a.is_active {
+  background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+}
+.mode_switcher a i {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -361,6 +361,36 @@
         });
     };
 
+    // var swClick = function () {
+    //     function activeLayout() {
+    //         $(".switcher-container").on("click", "a.sw-light", function () {
+    //             $(this).toggleClass("active");
+    //             $('body').addClass('home-boxed');
+    //             $('body').css({ 'background': '#f6f6f6' });
+    //             $('.sw-pattern.pattern').css({ "top": "100%", "opacity": 1, "z-index": "10" });
+    //         }).on("click", "a.sw-dark", function () {
+    //             $('.sw-pattern.pattern').css({ "top": "98%", "opacity": 0, "z-index": "-1" });
+    //             $(this).removeClass('active').addClass('active');
+    //             $('body').removeClass('home-boxed');
+    //             $('body').css({ 'background': '#fff' });
+    //             return false;
+    //         })
+    //     }
+
+    //     function activePattern() {
+    //         $('.sw-pattern').on('click', function () {
+    //             $('.sw-pattern.pattern a').removeClass('current');
+    //             $(this).addClass('current');
+    //             $('body').css({ 'background': 'url("' + $(this).data('image') + '")', 'background-size': '30px 30px', 'background-repeat': 'repeat' });
+    //             return false
+    //         })
+    //     }
+
+    //     activeLayout();
+    //     activePattern();
+    // };
+
+
     // Dom Ready
     $(function () {
         goTop();
@@ -382,6 +412,7 @@
         donatProgress();
         tabs();
         Preloader();
+        swClick();
     });
 
 })(jQuery);

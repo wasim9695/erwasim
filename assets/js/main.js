@@ -321,6 +321,37 @@
         })
     };
 
+    // Dark Light Mode
+    $(".dark").on('click', function (e) {
+        e.preventDefault();
+        $(".body").addClass("is_dark")
+        $(".light").removeClass("is_active")
+        $(".dark").addClass("is_active")
+
+        $(".bt-footer").removeClass("home-style")
+
+        document.getElementById("logo_footer").src = "assets/images/logo/logo-footer.png";
+    });
+
+    $(".light").on('click', function (e) {
+        e.preventDefault();
+        $(".body").removeClass("is_dark")
+        $(".light").addClass("is_active")
+        $(".dark").removeClass("is_active")
+
+        $(".bt-footer").addClass("home-style")
+
+        document.getElementById("logo_footer").src = "assets/images/logo/logo-footer-home.png";
+    });
+
+    // var alertBox = function () {
+    //     $(document).on('click', '.close', function (e) {
+    //         $(this).closest('.flat-alert').remove();
+    //         e.preventDefault();
+    //     })
+    // };
+    
+
 
     // Dom Ready
     $(function () {
