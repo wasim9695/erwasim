@@ -16,6 +16,10 @@
         }
       }
     }
+
+    .mode_switcher {
+      right: 18%;
+    }
   }
 
   @media only screen and (max-width: 1440px) {
@@ -38,22 +42,49 @@
       }
     }
 
-  .flat-contact .wrap-contact {
-    padding: 85px 15px 78px 0px;
+    .flat-contact .wrap-contact {
+      padding: 85px 15px 78px 0px;
+    }
+
+    .widget-menu.style-2 {
+      padding-right: 40px;
+    }
+
+    .swiper-slide-active .flat-slider .image {
+      padding-right: 30px;
+    }
+    .slider .slider-item .image .icon-slider {
+      right: 20px;
+    }
+    .slider .slider-item .content p {
+      padding-right: 140px;
+    }
+
   }
 
-  .widget-menu.style-2 {
-    padding-right: 40px;
-  }
-
-
+  @media only screen and (max-width: 1330px) {
+    .flat-service.home2 .heading-section h2 {
+      padding: 0 330px;
+    }
+    .flat-about.home2 .wrap-icon {
+      padding-left: 20px;
+    }
+    .flat-about.home2 .wrap-about .heading {
+      padding-left: 0;
+    }
+    .header_1 #main-nav {
+      left: 26%;
+    }
+    .mode_switcher {
+      right: 185px;
+    }
   }
 
   @media only screen and (max-width: 1199px) {
 
     .header_1 #main-nav {
       position: absolute;
-      left: 23.65%;
+      left: 17%;
     }
     .flat-blog-details .post {
       padding: 64px 40px 80px;
@@ -81,6 +112,74 @@
       padding-left: 0px;
     }
 
+    .slider.home2 {
+      .slider-item {
+        padding-bottom: 100px;
+        .content {
+          h1 {
+            padding-right: 50px;
+          }
+          p {
+            padding-right: 50px;
+          }
+        }
+        .image {
+          .info {
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    .slider .slider-item .image .diagram {
+      left: -10.2%;
+      bottom: 25%;
+    }
+
+    .flat-service.home2 {
+      clip-path: unset;
+    }
+
+    .flat-service.home2 .heading-section h2 {
+      padding: 0 240px;
+    }
+
+    .flat-service.home2 {
+      padding: 100px 0;
+    }
+
+    .flat-about.home2 {
+      padding: 100px 0;
+    }
+
+    .flat-about.home2 .wrap-about .heading {
+      padding-top: 0;
+    }
+
+    .flat-process.home2 .heading-section h2 {
+      padding-right: 0;
+    }
+
+    .flat-process.home2 {
+      clip-path: unset;
+      padding: 100px 0;
+    }
+
+    .flat-testimonial.home2 {
+      padding: 100px 0;
+      clip-path: unset;
+      margin-top: 0;
+    }
+
+    .flat-faq.home2 {
+      padding: 100px 0 0;
+      margin-top: 0;
+    }
+
+    .flat-blog-post.home2 {
+      padding-bottom: 130px;
+    }
+
   }
   
   @media only screen and (max-width: 991px) {
@@ -88,6 +187,11 @@
     .mobile-button {
       display: block !important;
     }
+
+    .mode_switcher {
+      right: 60px;
+    }
+  
 
     .swiper-pagination2,
     .swiper-button-prev,
@@ -121,6 +225,9 @@
         .content {
           width: 60%;
           padding-left: 0;
+          p {
+            padding: 0;
+          }
         }
         .image {
           width: 40%;
@@ -130,15 +237,37 @@
             display: none;
           }
           .diagram {
-            left: 35px;
+            left: 50%;
             bottom: 20%;
+            transform: translateX(-50%);
+            margin-bottom: 5px;
           }
           .info {
             bottom: 0%;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       }
     }
+
+    .slider.home2 .slider-item {
+      padding: 80px 0 90px;
+      .content {
+        .heading {
+          margin-bottom: 50px;
+        }
+        h1 {
+          padding: 0;
+          font-size: 48px;
+          line-height: 60px;
+        }
+        p {
+          padding: 0;
+        }
+      }
+    }
+    
 
     #footer {
       padding: 70px 0 50px;
@@ -238,7 +367,7 @@
         margin-bottom: 110px;
       }
       .wrap-testimonial {
-          margin-bottom: 80px;
+          margin-bottom: 90px;
       }
     }
 
@@ -361,6 +490,56 @@
       .wrap-contact {
         padding: 80px 15px 80px 0px;
       }
+    }
+
+    .flat-service.home2 .heading-section h2 {
+      padding: 0;
+    }
+    .flat-service.home2 {
+      padding: 90px 0 60px;
+    }
+
+    .flat-about .wrap-about {
+      flex-wrap: wrap;
+    }
+
+    .flat-about.home2 {
+      padding: 90px 0;
+      .wrap-about {
+        .heading {
+          width: 50%;
+          padding-right: 15px;
+        }
+        .image {
+          width: 50%;
+        }
+        .wrap-icon {
+          display: flex;
+          width: 100%;
+          padding-left: 0;
+          padding-top: 40px;
+          .box {
+            padding-right: 30px;
+            margin-bottom: 0;
+            &:last-child {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .flat-process.home2 {
+      padding: 90px 0 70px;
+    }
+    .flat-testimonial.home2 {
+      padding: 90px 0 0;
+    }
+    .flat-faq.home2 {
+      padding: 90px 0 0;
+    }
+    .flat-blog-post.home2 {
+      padding-bottom: 100px;
     }
     
   }
@@ -600,9 +779,12 @@
     }
 
     .flat-testimonial {
-      padding-bottom: 0;
+   
       .wrap-testimonial {
-        margin-bottom: 75px;
+        margin-bottom: 90px;
+        &.style-mobi {
+          margin-bottom: 0px;
+        }
       }
     }
 
@@ -624,6 +806,47 @@
 
     .flat-faq .flat-accordion .flat-toggle .toggle-content {
       padding: 0px 15px 23px 2px;
+    }
+
+    .flat-service.home2 {
+      padding: 75px 0 45px;
+    }
+
+    .flat-about.home2 {
+      padding: 75px 0 45px;
+      .wrap-about {
+        display: block;
+        .heading {
+          width: 100%;
+        }
+        .image {
+          width: 100%;
+        }
+        .wrap-icon {
+          display: block;
+          padding-top: 0;
+          .box {
+            padding-right: 0;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .flat-process.home2 {
+      padding: 75px 0 30px;
+    }
+
+    .flat-testimonial.home2 {
+      padding: 75px 0 75px;
+    }
+
+    .flat-faq.home2 {
+      padding: 75px 0 0;
+    }
+
+    .flat-blog-post.home2 {
+      padding-bottom: 52px;
     }
 
   }
@@ -653,6 +876,11 @@
       line-height: 58px;
       font-size: 46px;
     }
+
+    .slider .slider-item .content .heading h2 {
+      margin-bottom: 10px;
+    }
+   
   
   }
 
@@ -665,6 +893,9 @@
     .flat-about.home2 .progress-box1 {
       margin-left: 20px;
       margin-right: 20px;
+    }
+    .mode_switcher {
+      display: none;
     }
     
   }

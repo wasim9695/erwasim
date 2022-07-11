@@ -1413,34 +1413,9 @@ header {
     border-top: 1px solid rgba(138, 138, 160, 0.3);
 }
 
-.style3 #main-nav-mobi .current-item>a,
-.style3 #main-nav-mobi ul>li>a:hover {
-    color: var(--primary-color9);
-}
-
-.style2 #main-nav-mobi .current-item>a,
-.style2 #main-nav-mobi ul>li>a:hover {
-    color: var(--primary-color8);
-}
 #main-nav-mobi .current-item>a,
 #main-nav-mobi ul>li>a:hover {
     color: var(--primary-color3);
-}
-
-.style2 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-    background-color: var(--primary-color8);
-}
-
-.style2 #main-nav-mobi ul > li.current-menu-item > a {
-    color: var(--primary-color8);
-}
-
-.style3 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-    background-color: var(--primary-color9);
-}
-
-.style3 #main-nav-mobi ul > li.current-menu-item > a {
-    color: var(--primary-color9);
 }
 
 #main-nav-mobi {
@@ -1685,7 +1660,7 @@ header {
         left: 0;
         width: 100%;
         box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
-        z-index: 9999;
+        z-index: 99999;
         background: var(--primary-color);
         border: none;
         opacity: 0;
@@ -1695,35 +1670,6 @@ header {
         }
         #main-nav > ul > .current-menu-item > a {
             color: var(--primary-color3);
-        }
-        &.style2 {
-            background: var(--primary-color2);
-            top: -300px;
-            #main-nav > ul > li > a {
-                color: var(--primary-color);
-            }
-            #main-nav > ul > .current-menu-item > a {
-                color: var(--primary-color8);
-            }
-            #site-header-inner.home2 {
-                border-bottom: unset;
-            }
-        }
-        &.style3 {
-            height: 0;
-            margin-top: -1px;
-            #main-nav > ul > li > a {
-                color: var(--primary-color);
-            }
-            #main-nav > ul > .current-menu-item > a {
-                color: #739798;
-            }
-            .box-phone,
-            .wrap-email,
-            #site-logo {
-                display: none;
-            }
-
         }   
     }
 }
@@ -1898,7 +1844,7 @@ header {
     }
     p {
         padding-right: 35px;
-        color: #9C99AE;
+        color: rgba(156, 153, 174, 0.75);
     }
 }
 
@@ -1911,6 +1857,7 @@ header {
         padding-right: 130px;
         p {
             margin-bottom: 16px;
+            color: rgba(156, 153, 174, 0.75);
         }
         a {
             color: rgba(171,175,199,0.75);
@@ -1931,6 +1878,7 @@ header {
         p {
             margin-bottom: 41px;
             padding-right: 30px;
+            color: rgba(156, 153, 174, 0.75);
         }
     }
     .title-widget {

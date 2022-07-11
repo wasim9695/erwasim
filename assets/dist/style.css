@@ -1365,35 +1365,9 @@ header {
   border-top: 1px solid rgba(138, 138, 160, 0.3);
 }
 
-.style3 #main-nav-mobi .current-item > a,
-.style3 #main-nav-mobi ul > li > a:hover {
-  color: var(--primary-color9);
-}
-
-.style2 #main-nav-mobi .current-item > a,
-.style2 #main-nav-mobi ul > li > a:hover {
-  color: var(--primary-color8);
-}
-
 #main-nav-mobi .current-item > a,
 #main-nav-mobi ul > li > a:hover {
   color: var(--primary-color3);
-}
-
-.style2 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-  background-color: var(--primary-color8);
-}
-
-.style2 #main-nav-mobi ul > li.current-menu-item > a {
-  color: var(--primary-color8);
-}
-
-.style3 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-  background-color: var(--primary-color9);
-}
-
-.style3 #main-nav-mobi ul > li.current-menu-item > a {
-  color: var(--primary-color9);
 }
 
 #main-nav-mobi .menu-item-has-children .arrow {
@@ -1622,7 +1596,7 @@ header {
   left: 0;
   width: 100%;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
+  z-index: 99999;
   background: var(--primary-color);
   border: none;
   opacity: 0;
@@ -1637,34 +1611,6 @@ header {
 }
 .header_1.is-fixed #main-nav > ul > .current-menu-item > a {
   color: var(--primary-color3);
-}
-.header_1.is-fixed.style2 {
-  background: var(--primary-color2);
-  top: -300px;
-}
-.header_1.is-fixed.style2 #main-nav > ul > li > a {
-  color: var(--primary-color);
-}
-.header_1.is-fixed.style2 #main-nav > ul > .current-menu-item > a {
-  color: var(--primary-color8);
-}
-.header_1.is-fixed.style2 #site-header-inner.home2 {
-  border-bottom: unset;
-}
-.header_1.is-fixed.style3 {
-  height: 0;
-  margin-top: -1px;
-}
-.header_1.is-fixed.style3 #main-nav > ul > li > a {
-  color: var(--primary-color);
-}
-.header_1.is-fixed.style3 #main-nav > ul > .current-menu-item > a {
-  color: #739798;
-}
-.header_1.is-fixed.style3 .box-phone,
-.header_1.is-fixed.style3 .wrap-email,
-.header_1.is-fixed.style3 #site-logo {
-  display: none;
 }
 
 .header_1.is-fixed.is-small {
@@ -1824,7 +1770,7 @@ header {
 }
 .widget-logo p {
   padding-right: 35px;
-  color: #9C99AE;
+  color: rgba(156, 153, 174, 0.75);
 }
 
 /* widget-menu */
@@ -1835,6 +1781,7 @@ header {
 }
 .widget-menu.style-2 p {
   margin-bottom: 16px;
+  color: rgba(156, 153, 174, 0.75);
 }
 .widget-menu.style-2 a {
   color: rgba(171, 175, 199, 0.75);
@@ -1855,6 +1802,7 @@ header {
 .widget-menu.style-3 p {
   margin-bottom: 41px;
   padding-right: 30px;
+  color: rgba(156, 153, 174, 0.75);
 }
 .widget-menu .title-widget {
   margin-bottom: 27.5px;

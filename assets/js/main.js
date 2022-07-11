@@ -147,9 +147,10 @@
         });
     };
 
-    var headerFixed = function () {
+       // Header Fixed
+       var headerFixed = function () {
         if ($('body').hasClass('header-fixed')) {
-            var nav = $('#header_main,.wrap-menur');
+            var nav = $('#header_main');
 
             if (nav.length) {
                 var offsetTop = nav.offset().top,
@@ -351,7 +352,6 @@
     //     })
     // };
     
-
 
     // Dom Ready
     $(function () {
