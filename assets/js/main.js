@@ -8,6 +8,7 @@
   * ajaxSubscribe
   * alertBox
   * loadmore
+  * Dark Light Mode
 */
 
 ; (function ($) {
@@ -58,12 +59,9 @@
         var retina = window.devicePixelRatio > 1 ? true : false;
           if(retina) {
               $('#site-logo-inner').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'146',height:'65'} );
-              $('#site-logo-inner.style2').find('img').attr( {src:'assets/images/logo/logo-home2@2x.png',width:'146',height:'65'} );
-              $('#site-logo-inner.style3').find('img').attr( {src:'assets/images/logo/logo-home3@2x.png',width:'146',height:'65'} );
 
               $('#logo-footer.style').find('img').attr( {src:'assets/images/logo/logo-footer@2x.png',width:'146',height:'65'} );
               $('#logo-footer.style2').find('img').attr( {src:'assets/images/logo/logo-footer-home.png',width:'146',height:'65'} );
-              $('#logo-footer.style3').find('img').attr( {src:'assets/images/logo/logo-footer-h3@2x.png',width:'146',height:'65'} );
           }   
         };
 
@@ -351,7 +349,7 @@
     //         e.preventDefault();
     //     })
     // };
-    
+
 
     // Dom Ready
     $(function () {

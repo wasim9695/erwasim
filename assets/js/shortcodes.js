@@ -17,6 +17,8 @@
   * no_link
   * popupGallery
   * donatProgress
+  * tabs
+  * activeMenuAndSmoothScroll
 */
 
 ; (function ($) {
@@ -110,33 +112,6 @@
             }
         });
     };
-
-    var flatAccordion2 = function() {
-        var args = {duration: 600};
-        $('.flat-toggle2 .toggle-title.active').siblings('.toggle-content').show();
-      
-        $('.flat-toggle2.enable .toggle-title').on('click', function() {
-            $(this).closest('.flat-toggle2').find('.toggle-content').slideToggle(args);
-            $(this).toggleClass('active');
-        }); // toggle 
-      
-        $('.flat-accordion2 .toggle-title').on('click', function () {
-            if( !$(this).is('.active') ) {
-                $(this).closest('.flat-accordion2').find('.toggle-title.active').toggleClass('active').next().slideToggle(args);
-                $(this).toggleClass('active');
-                $(this).next().slideToggle(args);
-            } else {
-                $(this).toggleClass('active');
-                $(this).next().slideToggle(args);
-            }     
-        }); // accordion
-
-        // arow
-        $('flat-toggle2').on('click', function(){
-            $(this).addClass('active');
-        });
-    }; 
-
 
     var buttonHeart = function () { 
         $(".wishlist-button").on("click", function() {
@@ -252,27 +227,6 @@
         });
     };
 
-    var flatProgressBar2 = function () {
-        $('.couter2').appear(function () {
-            $('.chart2').easyPieChart({
-                easing: 'easeOut',
-                lineWidth: 5,
-                size: 110,
-                scaleColor: false,
-                barColor: '#B14233',
-                trackColor: '#F6F6F6',
-                animate: 5000,
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent2').text(Math.round(percent));
-                },
-                rotate: 275,
-            });
-
-        }, {
-            offset: 400
-        });
-    };
-
     var popUpLightBox = function () {
         if ($(".lightbox-image").length) {
             $(".lightbox-image").fancybox({
@@ -308,24 +262,24 @@
           });          
     };
 
-    var popupGallery = function () {
-        if ($().magnificPopup) {
-        $(".popup-gallery").magnificPopup({
-            type: "image",
-            tLoading: "Loading image #%curr%...",
-            removalDelay: 600,
-            mainClass: "my-mfp-slide-bottom",
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [ 0, 1 ]
-            },
-            image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-            }
-        });
-        }
-    } 
+    // var popupGallery = function () {
+    //     if ($().magnificPopup) {
+    //     $(".popup-gallery").magnificPopup({
+    //         type: "image",
+    //         tLoading: "Loading image #%curr%...",
+    //         removalDelay: 600,
+    //         mainClass: "my-mfp-slide-bottom",
+    //         gallery: {
+    //             enabled: true,
+    //             navigateByImgClick: true,
+    //             preload: [ 0, 1 ]
+    //         },
+    //         image: {
+    //             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    //         }
+    //     });
+    //     }
+    // } 
 
     var donatProgress = function () {
         $(".content-progress-box").appear(function () {
@@ -401,7 +355,6 @@
         flatContentBox();
         topSearch();
         flatAccordion();
-        flatAccordion2();
         donatProgress();
         popUpLightBox();
         toggleMenu();
@@ -409,10 +362,9 @@
         flatCounter();
         buttonHeart();
         flatProgressBar();
-        flatProgressBar2();
         no_link();
         flcustominput();
-        popupGallery();
+        // popupGallery();
         donatProgress();
         tabs();
         Preloader();

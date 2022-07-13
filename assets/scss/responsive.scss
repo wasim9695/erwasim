@@ -180,6 +180,10 @@
       padding-bottom: 130px;
     }
 
+    .flat-blog-sidebar #comments .comment-list .comment-01 .comment-avatar {
+      width: 11.9%;
+    }
+
   }
   
   @media only screen and (max-width: 991px) {
@@ -324,6 +328,11 @@
       .button-pagination .inner.inner-2 {
         padding-left: 0px;
       }
+    }
+
+    .flat-blog-sidebar .post {
+      padding: 0px 0px 0px;
+      
     }
 
     .flat-service .service-box {
@@ -536,6 +545,11 @@
     .flat-blog-post.home2 {
       padding-bottom: 100px;
     }
+
+    .flat-blog-sidebar #comments .comment-list .comment-01 .comment-avatar {
+      width: 10.9%;
+    }
+
     
   }
 
@@ -781,7 +795,6 @@
     }
 
     .flat-testimonial {
-   
       .wrap-testimonial {
         margin-bottom: 90px;
         &.style-mobi {
@@ -851,6 +864,72 @@
       padding-bottom: 52px;
     }
 
+    
+    .flat-blog-sidebar #comments .comment-list .comment-01.style {
+      padding-left: 0;
+      .comment-avatar {
+        margin-right: 0px;
+      }
+    }
+    .flat-blog-sidebar #comments .comment-list .comment-01 .comment-avatar {
+      width: 17.9%;
+    }
+
+    .flat-blog-sidebar #comments .comment-list .comment-01 {
+      display: block;
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        padding-top: 5px;
+      }
+      .comment-avatar {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .comment-content {
+        width: 100%;
+      }
+    }
+
+    .flat-blog-sidebar {
+      padding: 50px 0 75px;
+      .post {
+        .image-box {
+          margin-bottom: 35px;
+          display: block;
+          .img-1 {
+            width: 100%;
+            padding: 0px;
+            margin-bottom: 15px;
+          }
+          .img-2 {
+            width: 100%;
+            padding: 0px;
+          }
+        }
+        .box-text.style-2 {
+          margin-bottom: 35px;
+        }
+      }
+      #comments {
+        .respond-comment {
+          padding: 40px 15px;
+        }
+        .comment-form {
+          .style-text {
+            width: 100%;
+            float: unset;
+          }
+          fieldset.email-wrap,
+          fieldset.name-wrap {
+            padding: 0px;
+          }
+        }
+       
+      }
+      
+    }
+
+
   }
 
   @media only screen and (max-width: 425px) {
@@ -870,6 +949,7 @@
       margin-bottom: 11px;
       line-height: 20px;
     }
+
   }
 
   @media only screen and (max-width: 330px) {
@@ -893,9 +973,6 @@
       margin-bottom: 10px;
     }
 
-  
-  
-   
   
   }
 
