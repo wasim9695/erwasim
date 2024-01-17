@@ -20,6 +20,12 @@
     .mode_switcher {
       right: 18%;
     }
+
+    .flat-faq .wrap-faq {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
   }
 
   @media only screen and (max-width: 1440px) {
@@ -58,6 +64,11 @@
     }
     .slider .slider-item .content p {
       padding-right: 140px;
+    }
+
+    .flat-faq .wrap-faq {
+      padding-left: 150px;
+      padding-right: 150px;
     }
 
   }
@@ -137,32 +148,26 @@
     }
 
     .flat-service.home2 {
-      clip-path: unset;
-    }
-
-    .flat-service.home2 .heading-section h2 {
-      padding: 0 240px;
-    }
-
-    .flat-service.home2 {
       padding: 100px 0;
+      clip-path: unset;
+      .heading-section h2 {
+        padding: 0 240px;
+      }
     }
 
     .flat-about.home2 {
       padding: 100px 0;
-    }
-
-    .flat-about.home2 .wrap-about .heading {
-      padding-top: 0;
-    }
-
-    .flat-process.home2 .heading-section h2 {
-      padding-right: 0;
+      .wrap-about .heading {
+        padding-top: 0;
+      }
     }
 
     .flat-process.home2 {
       clip-path: unset;
       padding: 100px 0;
+      .heading-section h2 {
+        padding-right: 0;
+      }
     }
 
     .flat-testimonial.home2 {
@@ -182,6 +187,11 @@
 
     .flat-blog-sidebar #comments .comment-list .comment-01 .comment-avatar {
       width: 11.9%;
+    }
+
+    .flat-faq .wrap-faq {
+      padding-left: 100px;
+      padding-right: 100px;
     }
 
   }
@@ -378,7 +388,7 @@
     .flat-about {
       .wrap-about {
         .heading {
-          width: 43%;
+          width: 40%;
           padding-top: 0px;
           padding-right: 20px;
           .heading-section {
@@ -386,12 +396,12 @@
           }
         }
         .image {
-          width: 35%;
+          width: 30%;
         }
         .thems-counter {
           padding-top: 0px;
           padding-left: 20px;
-          width: 27%;
+          width: 30%;
           .counter-box {
             margin-bottom: 30px;
             .number {
@@ -496,11 +506,11 @@
       }
     }
 
-    .flat-service.home2 .heading-section h2 {
-      padding: 0;
-    }
     .flat-service.home2 {
       padding: 90px 0 60px;
+      .heading-section h2 {
+        padding: 0;
+      }
     }
 
     .flat-about .wrap-about {
@@ -550,6 +560,10 @@
       width: 10.9%;
     }
 
+    .flat-faq .wrap-faq {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
     
   }
 
@@ -864,17 +878,6 @@
       padding-bottom: 52px;
     }
 
-    
-    .flat-blog-sidebar #comments .comment-list .comment-01.style {
-      padding-left: 0;
-      .comment-avatar {
-        margin-right: 0px;
-      }
-    }
-    .flat-blog-sidebar #comments .comment-list .comment-01 .comment-avatar {
-      width: 17.9%;
-    }
-
     .flat-blog-sidebar #comments .comment-list .comment-01 {
       display: block;
       &:nth-last-child(1),
@@ -884,9 +887,16 @@
       .comment-avatar {
         width: 100%;
         margin-bottom: 15px;
+        width: 17.9%;
       }
       .comment-content {
         width: 100%;
+      }
+      &.style {
+        padding-left: 0;
+        .comment-avatar {
+          margin-right: 0px;
+        }
       }
     }
 
@@ -924,11 +934,8 @@
             padding: 0px;
           }
         }
-       
       }
-      
     }
-
 
   }
 

@@ -332,11 +332,14 @@
 .slider .slider-item .content h1 {
   cursor: text;
   text-transform: capitalize;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 .slider .slider-item .content h3 {
   text-transform: capitalize;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
+}
+.slider .slider-item .content h3 .gold-title {
+  font-weight: 600;
 }
 .slider .slider-item .content p {
   font-size: 20px;
@@ -1502,8 +1505,8 @@
   margin-bottom: 25px;
 }
 .flat-faq .wrap-faq {
-  padding-left: 119px;
-  padding-right: 119px;
+  padding-left: 239px;
+  padding-right: 239px;
 }
 .flat-faq .flat-accordion .flat-toggle {
   border-top: 1px solid var(--primary-color5);

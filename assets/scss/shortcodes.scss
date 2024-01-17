@@ -323,11 +323,14 @@
             h1 {
                 cursor: text;
                 text-transform: capitalize;
-                margin-bottom: 21px;
+                margin-bottom: 16px;
             }
             h3 {
                 text-transform: capitalize;
-                margin-bottom: 31px;
+                margin-bottom: 26px;
+                .gold-title {
+                    font-weight: 600;
+                }                
             }
             p {
                 font-size: 20px;
@@ -1547,8 +1550,8 @@
         }
     }
     .wrap-faq {
-        padding-left: 119px;
-        padding-right: 119px;
+        padding-left: 239px;
+        padding-right: 239px;
     }
     .flat-accordion {
         .flat-toggle {
