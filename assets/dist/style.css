@@ -2538,4 +2538,17 @@ header {
 .tf-section2, .tf-section{
   padding:25px 0;
 }
+
+.flat-about .wrap-about .heading {
+  width: 100%;
+  padding-top: 102px;
+  padding-right: 50px;
+  /* line-height: 41px; */
+}
+.slider .slider-item{
+  padding: 183px 0 0px;
+}
+.flat-about .wrap-about .heading{
+  padding-top:20px;
+}
 /*# sourceMappingURL=style.css.map */
